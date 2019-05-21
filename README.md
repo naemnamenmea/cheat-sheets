@@ -1,5 +1,16 @@
 # cheat-sheets
 
+python -m site [--user-site]
+
+C:\Users\user\Anaconda3\envs\<project_name>\Lib\site-packages
+
+python -c "import site; print (site.USER_SITE)"
+
+C:\Users\user\AppData\Local\Programs\Python\Python37-32\Lib - тут находятся все native пакеты, которые доступны для импорта и путь к ним прописан в sys.path
+
+pip install --user C:\Users\user\AppData\Roaming\Python\Python37\site-packages
+pip install C:\Users\user\AppData\Local\Programs\Python\Python37-32\Lib\site-packages
+
 git diff
 git show -f
 pip freeze > requirements.txt
