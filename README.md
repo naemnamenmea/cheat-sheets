@@ -1,6 +1,17 @@
 # cheat-sheets
 
+## Remove commit history
+```
+git checkout --orphan temp_branch 
+git add . 
+git commit -am "commit message" 
+git branch -D master 
+git branch -m master 
+git push -f origin master
+```
 python -m site [--user-site]
+
+~/.gitconfig
 
 C:\Users\user\Anaconda3\envs\<project_name>\Lib\site-packages
 
