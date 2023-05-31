@@ -1,0 +1,117 @@
+1. На хабре - разобрать момент с расширением свойств класса через промисы
+2. на хакерранке - разобрать момент с объявлением геттеров и сеттеров в функциях конструкторах
+
+вызов функции с привязкой к контексту (через bind, через точку, call, apply)
+что такое prototype
+как создать класс через функцию
+что такое прототип?
+создать объект через порождающую функцию, записать в прототип функции свойства какие-то
+
+https://maxpfrontend.ru/vebinary/voprosy-dlya-sobesedovaniya-javascript-razrabotchika/
+https://medium.com/@olgakozlova/%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D1%8B-%D0%B8%D0%B7-%D1%8F%D0%BD%D0%B4%D0%B5%D0%BA%D1%81%D0%B0-895261c94e16
+https://medium.com/@mbelsky/yandex-frontend-interview-454c75435b26
+https://tproger.ru/translations/common-javascript-interview-challenges/
+http://alexaweb.ru/zadachi-s-sobesedovaniya-na-frontend-razrabotchika-v-yandex-bootcamp.html
+https://habr.com/ru/post/351874/
+
+
+Number:
+    num.toString(base)
+    isFinite(num)
+    isNaN(num)
+    parseInt(str, ?radix)
+    parseFloat(str)
+
+Array:
+    Array.isArray(arr)
+    Array.from(iterable_object)
+    arr.splice(pos, el_to_delete, ...el_to_insert_before_pos) => (in-place) => this arr
+    arr.slice(?ifrom, ?eto)
+    arr.concat([1,2,3, [4,5]], 6, ...) => newArray(array + concated items)
+    arr.forEach(function(item, index, array) {});
+
+    arr.pop,
+    arr.push(el),
+    arr.shift(),
+    arr.unshift(el),
+
+    arr.indexOf(item, from),
+    arr.lastIndexOf(item, from),
+    arr.includes(item, from)
+
+    arr.find(function(item, index, array) {}) item / undefined
+    arr.findIndex(function(item, index, array) {}) => -1 / index
+
+    arr.map(function(item, index, array) {}) => array
+    arr.filter(function(item, index, array) {}) => array
+
+    arr.some(function(item, index, array) => boolean
+    arr.every(function(item, index, array) => boolean
+
+    arr.reduce(function(previousValue, item, index, array) {}, [initial]);
+    arr.reduceRight(function(previousValue, item, index, array) {}, [initial]);
+
+    arr.sort() => (in-place) => this arr
+    arr.reverse() => (in-place) => this arr
+    arr.join(glue)
+
+    
+string:
+    str.toUpperCase(substr, ?pos) => -1 || index
+    str.indexOf(substr, ?pos)
+    str.lastIndexOf(substr, ?pos)    
+    str.includes('substr')
+    str.startsWith('substr')
+    str.endsWith('substr')
+
+    str.slice(?start, ?end)
+    str.substring(?start, ?end)
+    str.substr(?pos, ?length)
+    
+    str.codePointAt(index)    
+    String.fromCodePoint(code)
+    str.split(delimiter, max_length_res_arr)
+    str1.localeCompare(str2)
+    
+    str.replace(/[^\w]/g, str_to_replace)
+    str.match()
+    
+Object:
+    obj.hasOwnProperty(prop)
+    Object.getOwnPropertyDescriptor(obj, prop_name)
+    Object.getOwnPropertyNames(obj)
+    Object.defineProperty(obj, prop_name, descr_obj)
+    Object.assign(target, source1, ..., sourceN)  -  выполняет НЕ глубокое копирование
+    let clone = Object.defineProperties({}, Object.getOwnPropertyDescriptors(obj));  - копирование с флагами, не копирует символьные свойства
+    Object.is(a, b) - проверяет на равенство
+    Object.keys(obj) => array
+    Object.values(obj) => array
+    Object.entries(obj) возвращает массив пар ключ-значение: [ ["name","John"], ["age", 30] ]
+    Object.fromEntries(map.entries()); // make a plain object (*)
+
+
+Map:
+    new Map () 
+    map.set(key, value)
+    map.get(key)
+    map.delete(key)
+    map.has(key)
+    map.clear()
+    map.size
+    map.keys() => возвращает перебираемый объект
+    map.values() => возвращает перебираемый объект
+    map.entries() => возвращает перебираемый объект
+    map.forEach((value, key, set) => {})
+
+Set:
+    new Set(iterable)
+    set.add(value)
+    set.delete(value)
+    set.has(value)
+    set.clear()
+    set.size
+    set.keys() => возвращает перебираемый объект
+    set.values() => возвращает перебираемый объект
+    set.entries() => возвращает перебираемый объект
+    set.forEach((value, valueAgain, set) => {})
+    

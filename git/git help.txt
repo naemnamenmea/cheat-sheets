@@ -1,0 +1,21 @@
+git-scm.com
+
+## git commands
+ls -la .git
+vim test.txt
+rm -rf .git
+git log
+git show [commit hash (>= 6 symbols)]
+??git branch out -b??
+git merge [branch name]
+git div ?? diff
+git rebase [master]
+git rebase --continue
+           --abort
+git commit --amend - добавить изменения в последний коммитах
+git push -f
+git pull
+git checkout master
+fast forward - если в коммитах нет противоречий
+
+Rem.: если commit '', то нужно нажать 'i', ввести "commit msg" -> ESC -> :wq
